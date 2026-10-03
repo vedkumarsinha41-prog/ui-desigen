@@ -1,0 +1,594 @@
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #e3e6f3;
+    box-shadow: 0 5px 15px rgb(0, 0, 0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+img{
+    height: 30px;
+    width:30px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: rgb(73, 194, 194);
+    pointer-events: visibleStroke;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+   content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+    
+
+}
+#hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    height: 90vh;
+}
+.hero-text{
+    width: 50%;
+}
+.hero-img{
+    width: 25%;
+}
+.hero-img img{
+    width: 100%;
+    height: auto;
+}
+
+#hero h4{
+    margin: 0;
+    
+}
+h6{
+    font-weight: 700;
+    color: #465b52;
+    
+}
+
+
+#hero h2{
+    margin: 5px 0;
+    color: #222;
+}
+
+
+#hero h1{
+    font-size: 40px;
+    margin: 5px 0;
+    color:#088178
+    
+    
+    
+}
+#hero p{
+    color: #465b52;
+    margin: 15px 0;
+}
+#hero button{
+    background-image: url("but-removebg-preview.png");
+    background-color:pink;
+    color: #088178;
+    border: 0;
+    border-radius: 10rem;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 20px;
+}
+#feature{
+    border: 2px solid paleturquoise;
+    background-color: beige;
+}
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+    border: 2px solid whitesmoke;
+    background-color: rgb(222, 230, 230);
+    border-radius: 4px;
+    margin: 15px 0;
+
+}
+ .pb{
+    height: 100px;
+    width: 100px;
+}
+#feature .fe-box{
+    box-shadow: 10px 10px 54px rgba(70,62,221,0.1);
+}
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #05138f;
+    background-color: #fddde4;
+}
+
+#feature .fe-box:nth-child(2) h6{
+background-color: #cdebbc;
+}
+
+#feature .fe-box:nth-child(3) h6{
+background-color: #a371c5;
+}
+
+#feature .fe-box:nth-child(4) h6{
+background-color: #28869e;
+}
+
+#feature .fe-box:nth-child(5) h6{
+background-color: #d6707e;
+}
+
+#feature .fe-box:nth-child(6) h6{
+background-color: #6bec96;
+}
+
+#product1{
+    text-align: center;
+    font-size: 30px;
+}
+.pro img{
+    width:300px ;
+    height:300px ;
+}
+.des{
+    font-size: 20px;
+    padding-top: 10px;
+}
+ /* .m{
+    padding-bottom: 70px;
+} */
+.star{
+    font-size: 10px;
+    
+}  
+.pro-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#product1 .pro{
+    width: 22%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #ccc7d0;
+    border-radius: 22px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    margin: 15px 0;
+    position: relative; 
+    transition: 0.2s ease;
+    
+}
+#product1 .pro img{
+    width: 90%;
+    border-radius: 40px;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro .des span{
+    color: #606063;
+    font-size: 12px;
+}
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: black;
+    font-size: 14px;
+}
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(243,181,25);
+}
+
+
+#product1 .pro .des h4{
+  padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+/* #product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+} */
+
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e8f6ea;
+    color: #088178;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+}
+
+.section-ml{
+    margin: 40px 0;
+}
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("image\ copy\ 16.png");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h4{
+    font-size: 20px;
+    margin: 0;
+}
+#banner h2{
+    font-size: 30px;
+    padding:  0;
+    margin: 5px 0;
+}
+#banner h2 span{
+    color: red;
+}
+
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+#banner button:hover{
+    background: #088178;
+    color: #fff;
+}
+
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    background-image: url("image\ copy\ 31.png");
+    min-width: 580px;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    
+    
+}
+#sm-banner h4{
+    color: red;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#sm-banner h2{
+    color: yellow;
+    font-size: 28px;
+    font-weight: 800;
+     padding-bottom: 30px; 
+
+}
+
+#sm-banner span{
+    color: rgb(85, 212, 11);
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    
+}
+
+ button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2s;
+    background-color: #6bec96;
+    border-radius: 5PX;
+    
+}
+
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2s;
+    background-color: #6bec96;
+    border-radius: 5PX;
+    
+}
+
+#sm-banner .banner-box:hover button{
+    background: #088178;
+    border: 1px solid #088178;
+}
+
+#sm-banner .banner-box2 {
+    background-image: url("image\ copy\ 30.png");
+}
+
+#banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    background-image: url("modern-hipster-girl-playing-snowballs-with-friends-winter-holidays-showing-peace-sign-as-posi.jpg");
+    width: 210%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+#banner3 h2{
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 5px;
+    /* padding-top: 20px; */
+
+}
+#banner3 h3{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.imgslider{
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgslider img{
+   height: 100%;
+   width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#newsletter{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image:url(image\ copy\ 36.png) ;
+    background-repeat: no-repeat;
+    background-position: 30% 30%;
+    background-color: rgb(252, 93, 35);
+}
+
+#newsletter h4{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 70PX;
+}
+#newsletter p{
+    color: red;
+    font-size: 10px;
+}
+#newsletter .form{
+  display: flex;
+    width: 550px;
+    max-width: 100%;
+}
+
+#newsletter input{
+    height:30px ;
+    padding:0 15px;
+    font-size: 16px;
+    width: 65%;
+    border: 1px solid transparent;
+    border-radius: 5 0 5px;
+    
+    outline: none;
+    flex: 1;
+}
+
+#newsletter button {
+    /* background-color: #088178;
+    color: white;
+    height: 50%;
+    width: 25%;
+    white-space: nowrap;
+
+    margin-top: 10px; */
+      height: 32px;
+    padding: 0 20px;
+    background-color: #088178;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    margin-top: 0;   /* Remove 10px margin */
+    white-space: nowrap;
+}
+
+
+ .section-pl{
+    height: 50vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px 80px;
+    
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .col img{
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+footer h4{
+    font-size:18px;
+    margin-bottom:15px;
+}
+
+footer p{
+    font-size:14px;
+    margin:5px 0;
+    color:#555;
+}
+
+.install .row{
+    display: flex;
+    align-items: center;
+    gap: 10px; /* dono image ke beech space */
+}
+
+.install .row img{
+    width: 140px;
+    height: auto;
+    padding: 5px;
+}
+footer{
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content:space-between;
+
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20%;
+}
+footer .logo{
+    margin-bottom: 30%;
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20PX;
+
+}
+footer P{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+footer .follow{
+ color: #a19b9c;
+ padding-right: 4px;
+ cursor: pointer;   
+}
+
+footer .follow i:hover,footer a:hover{
+    color:green;
+}
+footer.copyright{
+    width: 100%;
+    text-align: center;
+}
+@media(max-width:799px) {
+    #navbar{
+ display: flex;
+ flex-direction: column;
+    align-items: flex-start;
+    
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    height: 100vh;
+    width: 300px;
+    
+    }
+   
+}
